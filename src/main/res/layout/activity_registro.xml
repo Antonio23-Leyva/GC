@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_fondo"
+    tools:context=".Registro">
+
+    <ImageView
+        android:id="@+id/img_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fondo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="221dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="85dp"
+        android:src="@drawable/encriptado"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="129dp"
+        android:layout_marginLeft="274dp"
+        android:src="@drawable/ic_circles_fondo" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="250dp"
+        android:text="Datos De Registro"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="320dp"
+        android:drawableStart="@drawable/ic_user"
+        android:ems="10"
+        android:hint="Ingrese Su Usuario"
+        android:inputType="textAutoComplete"
+        android:textAlignment="center" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="400dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="480dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_show"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_registrar"
+        android:layout_width="315dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="560dp"
+        android:text="Registrar"
+        android:textColor="#FFFF"
+        app:backgroundTint="#3E9DBB" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_atras"
+        android:layout_width="157.5dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="655dp"
+        android:text="Atras"
+        android:textColor="#FFFF"
+        app:backgroundTint="#3E9DBB" />
+
+
+
+</RelativeLayout>

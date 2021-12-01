@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_fondo"
+    android:backgroundTint="@color/white"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/img_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fondo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="221dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/encriptado" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="129dp"
+        android:layout_marginLeft="337dp"
+        android:src="@drawable/ic_circles_fondo" />
+
+    <TextView
+        android:id="@+id/txt_titulo_menu"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="Contenedor de Contraseñas"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:layout_width="590dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="250dp"
+        android:background="#454E70AE"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_gestionar"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="#3E9DBB"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Gestionar"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:icon="@drawable/ic_gestionar"
+                    app:iconSize="30dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sugerir"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#3E9DBB"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Sugerir"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:icon="@drawable/ic_sugerir"
+                    app:iconSize="30dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_help"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="#3E9DBB"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Ayuda"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:icon="@drawable/ic_baseline_help_24"
+                    app:iconSize="30dp" />
+
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_huella"
+        android:layout_width="119dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="610dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/fingerprint"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_atras_menu"
+        android:layout_width="157.5dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="700dp"
+        android:text="Atras"
+        android:textColor="#FFFF"
+        app:backgroundTint="#3E9DBB" />
+</RelativeLayout>
